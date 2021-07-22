@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-bar{
+    position: fixed;
+}
+.nav-bar-content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+.nav-bar-content a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px 20px;
+    background-color: whitesmoke;
+    padding: 10px;
+    text-align: left;
+    transition: 0.5s;
+}
+.nav-bar-content a:hover{
+    background-color: blanchedalmond;
+    width: 120px;
+}
+.nav-bar-content .title{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.nav-bar-content a:hover .title{
+    visibility: visible;
+    padding-left: 15px;
+    opacity: 1;
+}
